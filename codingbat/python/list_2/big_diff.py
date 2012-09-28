@@ -10,5 +10,4 @@ big_diff([2, 10, 7, 2]) → 8
 '''
 
 def big_diff(nums):
-    nums.sort()
-    return nums[-1] - nums[0]
+    return max(nums) - min(nums)
