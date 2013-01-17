@@ -1,3 +1,9 @@
+*~
 *.pyc
 *.swp
-*~
+*.local
+*.identcache
+*.project
+*.pydevproject
+Debug/
+__history/
