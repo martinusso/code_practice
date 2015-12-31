@@ -8,20 +8,19 @@ uses
 const
   MAXIMUM = 4000000;
 var
-  fibonacciNumber: Integer;
-  firstPrevious: Integer;
-  secondPrevious: Integer;
-  value: Integer;
+  F, PreviousTerm, LastTerm: Integer;
+  Sum: Integer;
 begin
-  fibonacciNumber := 1;
-  firstPrevious := 1;
-  secondPrevious := 0;
-  while fibonacciNumber <= MAXIMUM do
+  PreviousTerm := 0;
+  LastTerm := 1;
+  while LastTerm <= MAXIMUM do
   begin
-    fibonacciNumber := firstPrevious + secondPrevious;
-    secondPrevious := firstPrevious;
-    firstPrevious := fibonacciNumber;
-    value := value + fibonacciNumber;
+    F := PreviousTerm + LastTerm;
+    PreviousTerm := LastTerm;
+    LastTerm := F;
+    if LastTerm mod 2 = 0 then
+      Sum := Sum + LastTerm;
   end;
-  Writeln(IntToStr(value));
+  Writeln(IntToStr(Sum));
+  Readln;
 end.
