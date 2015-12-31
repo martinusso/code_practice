@@ -9,9 +9,13 @@ package projecteuler
 func problem1() int {
 	sum := 0
 	for n := 3; n < 1000; n++ {
-		if (n%3 == 0) || (n%5 == 0) {
+		if isMultiplesOf3And5(n) {
 			sum += n
 		}
 	}
 	return sum
+}
+
+func isMultiplesOf3And5(number int) bool {
+	return (number%3 == 0) || (number%5 == 0)
 }
