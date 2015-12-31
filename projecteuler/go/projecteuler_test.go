@@ -19,3 +19,10 @@ func TestProblem2(t *testing.T) {
 		t.Errorf("Expected %d got %d", answer, r)
 	}
 }
+
+func TestProblem3(t *testing.T) {
+	answer := problem3()
+	if answer != answerProblem3 {
+		t.Errorf("Expected %d got %d", answerProblem3, answer)
+	}
+}
