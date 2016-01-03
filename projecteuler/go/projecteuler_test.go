@@ -5,18 +5,16 @@ import (
 )
 
 func TestProblem1(t *testing.T) {
-	answer := 233168
-	r := problem1()
-	if r != answer {
-		t.Errorf("Expected %d got %d", answer, r)
+	answer := problem1()
+	if answer != answerProblem1 {
+		t.Errorf("Expected %d got %d", answerProblem1, answer)
 	}
 }
 
 func TestProblem2(t *testing.T) {
-	answer := 4613732
-	r := problem2()
-	if r != answer {
-		t.Errorf("Expected %d got %d", answer, r)
+	answer := problem2()
+	if answer != answerProblem2 {
+		t.Errorf("Expected %d got %d", answerProblem2, answer)
 	}
 }
 
