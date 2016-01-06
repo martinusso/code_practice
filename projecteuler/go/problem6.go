@@ -18,9 +18,8 @@ const (
 )
 
 func problem6() int64 {
-	var (
-		sumOfSquares, squaresOfSum, sumOfNumbers int64
-	)
+	var sumOfSquares, squaresOfSum, sumOfNumbers int64
+
 	for i := int64(1); i <= 100; i++ {
 		sumOfSquares += i * i
 		sumOfNumbers += i
