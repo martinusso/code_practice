@@ -4,6 +4,7 @@ import (
 	"testing"
 )
 
+/*
 func TestProblem1(t *testing.T) {
 	answer := problem1()
 	if answer != answerProblem1 {
@@ -29,5 +30,12 @@ func TestProblem4(t *testing.T) {
 	answer := problem4()
 	if answer != answerProblem4 {
 		t.Errorf("Expected %d got %d", answerProblem4, answer)
+	}
+}
+*/
+func TestProblem5(t *testing.T) {
+	answer := problem5()
+	if answer != answerProblem5 {
+		t.Errorf("Expected %d got %d", answerProblem5, answer)
 	}
 }
