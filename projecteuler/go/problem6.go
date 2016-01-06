@@ -1,7 +1,5 @@
 package projecteuler
 
-import "math"
-
 // Problem 6
 //
 // Sum square difference
@@ -21,13 +19,12 @@ const (
 
 func problem6() int64 {
 	var (
-		sumOfSquares, squaresOfSum float64
-		sumOfNumbers               int
+		sumOfSquares, squaresOfSum, sumOfNumbers int64
 	)
-	for i := 1; i <= 100; i++ {
-		sumOfSquares += (math.Pow(float64(i), 2))
+	for i := int64(1); i <= 100; i++ {
+		sumOfSquares += i * i
 		sumOfNumbers += i
 	}
-	squaresOfSum = math.Pow(float64(sumOfNumbers), 2)
-	return int64(squaresOfSum - sumOfSquares)
+	squaresOfSum = sumOfNumbers * sumOfNumbers
+	return squaresOfSum - sumOfSquares
 }
