@@ -14,8 +14,8 @@ const (
 	min3DigitNumber = 100
 )
 
-func problem4() int {
-	largestPalindrome := 0
+func problem4() int64 {
+	var largestPalindrome int
 	for i := max3DigitNumber; i >= min3DigitNumber; i-- {
 		for j := i; j >= min3DigitNumber; j-- {
 			product := i * j
@@ -29,7 +29,7 @@ func problem4() int {
 			}
 		}
 	}
-	return largestPalindrome
+	return int64(largestPalindrome)
 }
 
 func isPalindromic(number int) bool {

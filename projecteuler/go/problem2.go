@@ -12,7 +12,7 @@ const (
 	answerProblem2 = 4613732
 )
 
-func problem2() int {
+func problem2() int64 {
 	previousTerm := 1
 	lastTerm := 0
 	sum := 0
@@ -23,7 +23,7 @@ func problem2() int {
 			sum += lastTerm
 		}
 	}
-	return sum
+	return int64(sum)
 }
 
 func isEven(number int) bool {

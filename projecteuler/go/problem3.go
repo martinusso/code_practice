@@ -11,7 +11,7 @@ const (
 	answerProblem3 = 6857
 )
 
-func problem3() int {
+func problem3() int64 {
 	number := 600851475143
 
 	for i := 2; i+i < number; i++ {
@@ -19,5 +19,5 @@ func problem3() int {
 			number /= i
 		}
 	}
-	return number
+	return int64(number)
 }

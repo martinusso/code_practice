@@ -9,14 +9,14 @@ const (
 	answerProblem1 = 233168
 )
 
-func problem1() int {
+func problem1() int64 {
 	sum := 0
 	for n := 3; n < 1000; n++ {
 		if isMultiplesOf3And5(n) {
 			sum += n
 		}
 	}
-	return sum
+	return int64(sum)
 }
 
 func isMultiplesOf3And5(number int) bool {
