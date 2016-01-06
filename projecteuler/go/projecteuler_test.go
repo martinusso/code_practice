@@ -38,3 +38,10 @@ func TestProblem5(t *testing.T) {
 		t.Errorf("Expected %d got %d", answerProblem5, answer)
 	}
 }
+
+func TestProblem6(t *testing.T) {
+	answer := problem6()
+	if answer != answerProblem6 {
+		t.Errorf("Expected %d got %d", answerProblem6, answer)
+	}
+}
