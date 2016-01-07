@@ -15,15 +15,22 @@ package projecteuler
 
 const (
 	answerProblem6 = 25164150
+	oneHundred     = 100
 )
 
 func problem6() int64 {
-	var sumOfSquares, squaresOfSum, sumOfNumbers int64
+	return squaresOfSum() - sumOfSquares()
+}
 
-	for i := int64(1); i <= 100; i++ {
-		sumOfSquares += i * i
-		sumOfNumbers += i
+func squaresOfSum() int64 {
+	sumOfNumbers := int64((oneHundred * (oneHundred + 1)) / 2)
+	return sumOfNumbers * sumOfNumbers
+}
+
+func sumOfSquares() int64 {
+	var sum int64
+	for i := int64(1); i <= oneHundred; i++ {
+		sum += i * i
 	}
-	squaresOfSum = sumOfNumbers * sumOfNumbers
-	return squaresOfSum - sumOfSquares
+	return sum
 }
