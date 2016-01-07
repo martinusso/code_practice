@@ -22,8 +22,8 @@ func problem6() int64 {
 }
 
 func squaresOfSum() int64 {
-	sumOfNumbers := int64((oneHundred * (oneHundred + 1)) / 2)
-	return sumOfNumbers * sumOfNumbers
+	sumOfNumbers := (oneHundred * (oneHundred + 1)) / 2
+	return int64(sumOfNumbers * sumOfNumbers)
 }
 
 func sumOfSquares() int64 {
