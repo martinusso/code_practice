@@ -13,9 +13,9 @@ const (
 )
 
 func problem2() int64 {
-	previousTerm := 1
-	lastTerm := 0
-	sum := 0
+	previousTerm := int64(1)
+	lastTerm := int64(0)
+	sum := int64(0)
 
 	for lastTerm <= 4000000 {
 		previousTerm, lastTerm = lastTerm, (previousTerm + lastTerm)
@@ -23,9 +23,9 @@ func problem2() int64 {
 			sum += lastTerm
 		}
 	}
-	return int64(sum)
+	return sum
 }
 
-func isEven(number int) bool {
+func isEven(number int64) bool {
 	return number%2 == 0
 }

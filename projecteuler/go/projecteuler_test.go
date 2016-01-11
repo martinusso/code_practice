@@ -22,6 +22,7 @@ var testPairs = []testPair{
 	{"problem 9", problem9(), answerProblem9},
 	{"problem 10", problem10(), answerProblem10},
 	{"problem 11", problem11(), answerProblem11},
+	{"problem 14", problem14(), answerProblem14},
 }
 
 func TestProjectEuler(t *testing.T) {
